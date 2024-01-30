@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{4F6C9ED6-3314-4CAF-B584-C5B382DCB0E3}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Sistema__Gestao__Pacientes PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Menus.cs">
+    <Files>
+      <File FileName="Program.cs" Line="14" Column="16" />
+      <File FileName="Menus.cs" Line="105" Column="61" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sistema_Gestao_Pacientes" expanded="True">
+            <Node name="Sistema_Gestao_Pacientes" expanded="True">
+              <Node name="Menus.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

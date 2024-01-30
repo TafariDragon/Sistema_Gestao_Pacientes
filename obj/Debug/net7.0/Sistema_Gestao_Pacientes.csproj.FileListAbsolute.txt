@@ -1,0 +1,15 @@
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/bin/Debug/net7.0/Sistema_Gestao_Pacientes
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/bin/Debug/net7.0/Sistema_Gestao_Pacientes.deps.json
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/bin/Debug/net7.0/Sistema_Gestao_Pacientes.runtimeconfig.json
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/bin/Debug/net7.0/Sistema_Gestao_Pacientes.dll
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/bin/Debug/net7.0/Sistema_Gestao_Pacientes.pdb
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/Sistema_Gestao_Pacientes.csproj.AssemblyReference.cache
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/Sistema_Gestao_Pacientes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/Sistema_Gestao_Pacientes.AssemblyInfoInputs.cache
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/Sistema_Gestao_Pacientes.AssemblyInfo.cs
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/Sistema_Gestao_Pacientes.csproj.CoreCompileInputs.cache
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/Sistema_Gestao_Pacientes.dll
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/refint/Sistema_Gestao_Pacientes.dll
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/Sistema_Gestao_Pacientes.pdb
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/Sistema_Gestao_Pacientes.genruntimeconfig.cache
+/Users/tafarivilanculos/Documents/Estudos Ferias/Curso C#/Sistema_Gestao_Pacientes/obj/Debug/net7.0/ref/Sistema_Gestao_Pacientes.dll
