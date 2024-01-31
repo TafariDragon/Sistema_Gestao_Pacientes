@@ -1,5 +1,6 @@
 ﻿using System;
-namespace Sistema_Gestao_Pacientes
+using Sistema_Gestao_Pacientes;
+namespace Sistema_Gestao_Pacientes.Operacoes
 {
 	public class Menus
 	{
@@ -10,6 +11,7 @@ namespace Sistema_Gestao_Pacientes
 
 		public void menuPrincipal()
 		{
+             
 
             System.Console.WriteLine("============================");
             System.Console.WriteLine("= 1-Gestão Pacientes       =");
@@ -47,6 +49,7 @@ namespace Sistema_Gestao_Pacientes
 		public void menuPacientes()
 		{
 
+            OperacoesPacientes operacaoPaciente = new OperacoesPacientes();
             System.Console.WriteLine("********************************");
             System.Console.WriteLine("* 1-Registar Paciente          *");
             System.Console.WriteLine("* 2-Alter Dados Do Paciente    *");
@@ -63,7 +66,7 @@ namespace Sistema_Gestao_Pacientes
             {
 
                 case 1:
-                     
+                    operacaoPaciente.registrarPaciente();
                 break;
 
                 case 2:

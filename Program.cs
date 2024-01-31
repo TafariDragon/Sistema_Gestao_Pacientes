@@ -1,5 +1,6 @@
 ﻿using System;
 using Sistema_Gestao_Pacientes;
+using Sistema_Gestao_Pacientes.Operacoes;
 
 namespace Principal{
 

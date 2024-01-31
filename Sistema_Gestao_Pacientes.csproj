@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Operacoes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Operacoes\" />
+  </ItemGroup>
 </Project>
