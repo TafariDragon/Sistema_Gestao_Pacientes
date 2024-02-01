@@ -1,34 +1,29 @@
 ﻿<Properties StartupConfiguration="{4F6C9ED6-3314-4CAF-B584-C5B382DCB0E3}|Default">
+  <MonoDevelop.Ide.ItemProperties.Sistema__Gestao__Pacientes PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Paciente.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BaseDados.cs">
     <Files>
       <File FileName="Program.cs" Line="14" Column="30" />
-      <File FileName="Menus.cs" Line="69" Column="58" />
-      <File FileName="Operacoes/OperacoesPacientes.cs" Line="44" Column="51" />
-      <File FileName="Paciente.cs" Line="77" Column="32" />
+      <File FileName="Menus.cs" />
+      <File FileName="Operacoes/OperacoesPacientes.cs" Line="34" Column="41" />
+      <File FileName="Paciente.cs" Line="25" Column="1" />
+      <File FileName="BaseDados.cs" Line="42" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Sistema_Gestao_Pacientes" expanded="True">
+          <Node name="Sistema_Gestao_Pacientes">
             <Node name="Sistema_Gestao_Pacientes">
-              <Node name="Operacoes" expanded="True" />
-              <Node name="Paciente.cs" selected="True" />
+              <Node name="BaseDados.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="Sistema_Gestao_Pacientes" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Sistema__Gestao__Pacientes PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

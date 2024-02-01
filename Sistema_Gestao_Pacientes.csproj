@@ -13,4 +13,8 @@
   <ItemGroup>
     <Folder Include="Operacoes\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="MySqlConnector" Version="2.3.5" />
+  </ItemGroup>
 </Project>

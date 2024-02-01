@@ -31,7 +31,7 @@ namespace Sistema_Gestao_Pacientes.Operacoes
 
             Console.WriteLine("Introduza o dia de Nascimento");
             int dia = Convert.ToInt32(Console.ReadLine());
-            paciente.DataNasc = new DateOnly(ano, mes, dia);
+            paciente.DataNasc = new DateTime(ano, mes, dia);
 
             Console.WriteLine("Introduza a doênça do Paciente");
             paciente.Doenca = Console.ReadLine();
@@ -40,8 +40,8 @@ namespace Sistema_Gestao_Pacientes.Operacoes
             paciente.Situacao = Console.ReadLine();
 
 
-
-            Console.WriteLine(paciente.toString());
+            BaseDados bd = new BaseDados();
+            bd.registarPaciente(paciente);
 
 
 

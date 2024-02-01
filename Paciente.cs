@@ -7,12 +7,12 @@ namespace Sistema_Gestao_Pacientes
 		private string nome;
 		private int idade;
 		private string bi;
-		private DateOnly dataNasc;
+		private DateTime dataNasc;
 		private string doenca;
 		private string situacao;
 
 
-		public Paciente(string nome,int idade,string bi,DateOnly dataNasc,string doenca,string situacao)
+		public Paciente(string nome,int idade,string bi,DateTime dataNasc,string doenca,string situacao)
 		{
 
 			this.nome = nome;
@@ -49,7 +49,7 @@ namespace Sistema_Gestao_Pacientes
         }
 
         // Getter e Setter para 'DataNasc'
-        public DateOnly DataNasc
+        public DateTime DataNasc
         {
             get { return dataNasc; }
             set { dataNasc = value; }
