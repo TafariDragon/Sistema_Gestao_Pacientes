@@ -47,6 +47,20 @@ namespace Sistema_Gestao_Pacientes.Operacoes
 
 
         }
+
+
+        public void alterarDadosPaciente()
+        {
+
+
+            Console.WriteLine("Introduza o numero unico do Paciente");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+
+
+
+
+        }
     }
 }
 

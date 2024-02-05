@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{4F6C9ED6-3314-4CAF-B584-C5B382DCB0E3}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Sistema__Gestao__Pacientes PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Medicamento.cs">
     <Files>
-      <File FileName="Program.cs" Line="14" Column="30" />
-      <File FileName="Menus.cs" />
-      <File FileName="Operacoes/OperacoesPacientes.cs" Line="34" Column="41" />
-      <File FileName="Paciente.cs" Line="25" Column="1" />
-      <File FileName="BaseDados.cs" Line="42" Column="31" />
-      <File FileName="Medicamento.cs" Line="9" Column="1" />
+      <File FileName="Program.cs" />
+      <File FileName="Menus.cs" Line="1" Column="1" />
+      <File FileName="Operacoes/OperacoesPacientes.cs" Line="39" Column="58" />
+      <File FileName="Paciente.cs" Line="12" Column="27" />
+      <File FileName="BaseDados.cs" Line="15" Column="1" />
+      <File FileName="Medicamento.cs" Line="34" Column="40" />
+      <File FileName="Operacoes/OpercaoMedicamentos.cs" Line="7" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Sistema_Gestao_Pacientes" expanded="True">
-            <Node name="Sistema_Gestao_Pacientes" expanded="True">
+          <Node name="Sistema_Gestao_Pacientes">
+            <Node name="Sistema_Gestao_Pacientes">
               <Node name="Operacoes" expanded="True" />
               <Node name="Medicamento.cs" selected="True" />
             </Node>
@@ -27,5 +28,5 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Sistema__Gestao__Pacientes PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
