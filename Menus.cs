@@ -70,18 +70,21 @@ namespace Sistema_Gestao_Pacientes.Operacoes
                 break;
 
                 case 2:
-
+                    operacaoPaciente.alterarDadosPaciente();
                 break;
 
                 case 3:
+                    operacaoPaciente.removerPaciente();
 
                 break;
 
                 case 4:
+                    operacaoPaciente.ListarTodosPaciente();
 
                 break;
 
                 case 5:
+                    operacaoPaciente.procurarPaciente();
 
                 break;
 

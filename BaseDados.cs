@@ -44,6 +44,147 @@ namespace Sistema_Gestao_Pacientes
         }
 
 
+        public bool verificação_Paciente(int id)
+        {
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+
+
+            try
+            {
+                // Abre a conexão com o banco de dados
+                connection.Open();
+
+                // Cria um comando SQL para verificar se o paciente existe
+                string query = "SELECT COUNT(*) FROM Paciente WHERE idPaciente = @id";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                // Executa o comando e obtém o número de registros encontrados
+                int count = Convert.ToInt32(command.ExecuteScalar());
+
+                if (count > 0)
+                {
+                    return true;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+            }
+            finally
+            {
+                // Fecha a conexão com o banco de dados
+                connection.Close();
+            }
+
+            return false;
+
+
+        }
+
+
+        public void alterarDadosPaciente(int id ,Paciente paciente)
+        {
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                connection.Open();
+
+                // Monta a consulta SQL de atualização
+                string query = "UPDATE Paciente SET Nome = @nome, Idade = @idade, BI = @bi, Data_Nascimento = @dataNasc, Doenca = @doenca, Situacao = @situacao WHERE idPaciente = @id";
+                MySqlCommand command = new MySqlCommand(query, connection);
+
+                // Adiciona os parâmetros à consulta
+                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@nome", paciente.Nome);
+                command.Parameters.AddWithValue("@idade", paciente.Idade);
+                command.Parameters.AddWithValue("@bi", paciente.BI);
+                command.Parameters.AddWithValue("@dataNasc", paciente.DataNasc);
+                command.Parameters.AddWithValue("@doenca", paciente.Doenca);
+                command.Parameters.AddWithValue("@situacao", paciente.Situacao);
+
+                // Executa a consulta de atualização
+                int rowsAffected = command.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    Console.WriteLine("Dados do paciente atualizados com sucesso.");
+                }
+                else
+                {
+                    Console.WriteLine("Nenhum paciente foi atualizado. Verifique se o ID do paciente está correto.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+
+
+        public Paciente buscarPaciente(int id)
+        {
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            Paciente paciente = new Paciente();
+            try
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM Paciente WHERE idPaciente = @id";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                // Executa a consulta
+                MySqlDataReader reader = command.ExecuteReader();
+
+                // Verifica se há linhas retornadas
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        // Aqui você pode acessar os dados do paciente
+                        int pacienteId = reader.GetInt32("idPaciente");
+                        paciente.Nome = reader.GetString("Nome");
+                        paciente.Idade = reader.GetInt32("Idade");
+                        paciente.BI = reader.GetString("BI");
+                        paciente.DataNasc = reader.GetDateTime("Data_Nascimento");
+                        paciente.Doenca= reader.GetString("Doenca");
+                        paciente.Situacao = reader.GetString("Situacao");
+
+                       
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Paciente não encontrado.");
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+
+            return paciente;
+
+        }
+
+
     }
 }
 
