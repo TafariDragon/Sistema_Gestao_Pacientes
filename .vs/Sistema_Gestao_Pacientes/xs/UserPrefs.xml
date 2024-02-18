@@ -1,31 +1,18 @@
 ﻿<Properties StartupConfiguration="{4F6C9ED6-3314-4CAF-B584-C5B382DCB0E3}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Sistema__Gestao__Pacientes PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Operacoes/OperacoesPacientes.cs">
     <Files>
       <File FileName="Program.cs" />
-      <File FileName="Menus.cs" Line="87" Column="57" />
-      <File FileName="Operacoes/OperacoesPacientes.cs" Line="177" Column="19" />
-      <File FileName="BaseDados.cs" Line="98" Column="108" />
-      <File FileName="Paciente.cs" Line="1" Column="1" />
+      <File FileName="Menus.cs" />
+      <File FileName="Operacoes/OperacoesPacientes.cs" Line="158" Column="35" />
+      <File FileName="BaseDados.cs" Line="268" Column="14" />
+      <File FileName="Paciente.cs" Line="79" Column="30" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Sistema_Gestao_Pacientes" expanded="True">
-            <Node name="Sistema_Gestao_Pacientes">
-              <Node name="Operacoes" expanded="True">
-                <Node name="OperacoesPacientes.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Sistema__Gestao__Pacientes PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

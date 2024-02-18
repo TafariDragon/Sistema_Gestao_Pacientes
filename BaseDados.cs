@@ -185,6 +185,92 @@ namespace Sistema_Gestao_Pacientes
         }
 
 
+        public List<Paciente> getallPacientes()
+        {
+            List<Paciente> pacientes = new List<Paciente>();
+            MySqlConnection connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM Paciente";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Paciente paciente = new Paciente
+                    {
+                        // Preencha os detalhes do paciente
+                        Id = reader.GetInt32("idPaciente"),
+                        Nome = reader.GetString("Nome"),
+                        Idade = reader.GetInt32("Idade"),
+                        BI = reader.GetString("BI"),
+                        DataNasc = reader.GetDateTime("Data_Nascimento"),
+                        Doenca = reader.GetString("Doenca"),
+                        Situacao = reader.GetString("Situacao")
+                    };
+                    pacientes.Add(paciente);
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return pacientes;
+
+        }
+
+
+
+        public void removerPaciente(int id)
+        {
+            MySqlConnection connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                connection.Open();
+
+                // Monta a consulta SQL de exclusão
+                string query = "DELETE FROM Paciente WHERE idPaciente = @id";
+                MySqlCommand command = new MySqlCommand(query, connection);
+
+                // Adiciona o parâmetro à consulta
+                command.Parameters.AddWithValue("@id", id);
+
+                // Executa a consulta de exclusão
+                int rowsAffected = command.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    Console.WriteLine("Paciente removido com sucesso.");
+                }
+                else
+                {
+                    Console.WriteLine("Nenhum paciente foi removido. Verifique se o ID do paciente está correto.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+
+        }
+
+
     }
 }
 

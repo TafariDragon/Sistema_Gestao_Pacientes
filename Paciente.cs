@@ -6,15 +6,17 @@ namespace Sistema_Gestao_Pacientes
 
 		private string nome;
 		private int idade;
+        private int id;
 		private string bi;
 		private DateTime dataNasc;
 		private string doenca;
 		private string situacao;
 
 
-		public Paciente(string nome,int idade,string bi,DateTime dataNasc,string doenca,string situacao)
+		public Paciente(int id,string nome,int idade,string bi,DateTime dataNasc,string doenca,string situacao)
 		{
 
+            this.id = id;
 			this.nome = nome;
 			this.idade = idade;
 			this.bi = bi;
@@ -67,6 +69,15 @@ namespace Sistema_Gestao_Pacientes
         {
             get { return situacao; }
             set { situacao = value; }
+        }
+
+
+        public int Id
+        {
+
+            get { return id; }
+            set { id = value; }
+
         }
 
 

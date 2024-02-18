@@ -155,10 +155,59 @@ namespace Sistema_Gestao_Pacientes.Operacoes
 
         public void removerPaciente()
         {
+            Menus m = new Menus();
+
+            Console.WriteLine("Introduza o numero unico do Paciente");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+
+            if (bd.verificação_Paciente(id) == false)
+            {
+                Console.WriteLine("Paciente não encontrado");
+            }
+            else {
+                Console.WriteLine(bd.buscarPaciente(id).toString());
+                Console.WriteLine("Pretende remover este Paciente?");
+                Console.WriteLine("1-Sim");
+                Console.WriteLine("2-Não");
+                int op = Convert.ToInt32(Console.ReadLine());
+                switch (op)
+                {
+
+                    case 1:
+                       bd.removerPaciente(id);
+                        m.menuPacientes();
+                   break;
+
+                    case 2:
+                        
+                        m.menuPacientes();
+                    break;
+
+                }
+
+            }
+
+
         }
 
         public void ListarTodosPaciente()
         {
+
+               List<Paciente> pacientes = bd.getallPacientes();
+
+                foreach (var paciente in pacientes)
+                {
+                    Console.WriteLine($"ID: {paciente.Id}");
+                    Console.WriteLine($"Nome: {paciente.Nome}");
+                    Console.WriteLine($"Idade: {paciente.Idade}");
+                    Console.WriteLine($"BI: {paciente.BI}");
+                    Console.WriteLine($"Data de Nascimento: {paciente.DataNasc.ToShortDateString()}");
+                    Console.WriteLine($"Doença: {paciente.Doenca}");
+                    Console.WriteLine($"Situação: {paciente.Situacao}");
+                    Console.WriteLine();
+                }
+
         }
 
 
